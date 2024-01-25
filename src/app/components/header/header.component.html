@@ -1,0 +1,73 @@
+<section class="section-head">
+  <div class="container">
+    <div class="header-container">
+      <img src="/assets/jifdas-logo.png" alt="logo" width="50" height="100%" />
+
+      <div class="head-nav">
+        <ul class="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li>
+            <a href="#modules">
+              Modules
+              <img
+                src="/assets/arrow-down.svg"
+                alt="i"
+                width="18px"
+                height="18px"
+            /></a>
+          </li>
+          <li><a href="#knowledge">Knowledge Based</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="btn-container">
+        <button class="btn">
+          <img src="/assets/globe.svg" alt="gl" width="18px" height="18px" />
+          English
+          <img src="/assets/down.svg" alt="gl" width="28px" height="26px" />
+        </button>
+        <app-button
+          >Sign into JIFDAS
+          <img src="/assets/login.svg" alt="gl" width="25px" height="23px"
+        /></app-button>
+      </div>
+      <div class="nav-control">
+        <div class="nav-menu" *ngIf="showList" (click)="onShowList()">
+          <img src="assets/icons/menu_close.svg" alt="menu" width="35px" />
+        </div>
+        <div class="nav-menu" *ngIf="!showList" (click)="onShowList()">
+          <img src="assets/icons/menu-fill.svg" width="35px" alt="menu" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SMALL SCREEN -->
+<section *ngIf="showList">
+  <section class="sideNav-container">
+    <div class="backdrop">
+      <div class="sideNav-style">
+        <ul class="small-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#modules">
+            Modules
+            <img
+              src="/assets/arrow-down.svg"
+              alt="i"
+              width="18px"
+              height="18px"
+            />
+            </a>
+
+          </li>
+          <li><a href="#knowledge" >Knowledge Based</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <button class="f-mont" (click)="closeShowList()">Contact Us</button>
+  </section>
+</section>

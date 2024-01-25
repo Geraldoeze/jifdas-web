@@ -1,0 +1,135 @@
+@import "../../../styles.css";
+.section-trust {
+  background-color: white;
+  padding: 40px 10px;
+  display: flex;
+  justify-content: center;
+}
+.main-trust {
+  width: 70%;
+  margin: 20px auto;
+}
+.text {
+  color: var(--text-color);
+  font-family: "Inter";
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.logos {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+/* Next section */
+.section-about {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 30px 0;
+}
+.about-sty {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.demo {
+  width: 90%;
+  margin: 3rem auto;
+  padding: 20px;
+  border-radius: 28px;
+  background-color: white;
+}
+
+/* next section */
+
+.section-benefit {
+  background-color: white;
+  padding: 30px 0;
+  padding-bottom: 6rem;
+}
+.contain {
+  width: 80%;
+  margin: 0 auto;
+}
+.benefit-header {
+  font-family: "Inter";
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+  margin: 2rem 0;
+}
+.cover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.benefit-cover {
+  width: 46%;
+  display: flex;
+  gap: 20px;
+}
+.header {
+  color: #000;
+  margin: 0;
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media only screen and (max-width: 860px) {
+  .section-trust {
+    padding: 20px 10px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+  .text {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .logos {
+    flex-wrap: wrap;
+  }
+  .section-about {
+    margin: 10px 0;
+  }
+  .about-sty {
+    width: 90%;
+  }
+  .demo {
+    width: 80%;
+  }
+  .section-benefit {
+    padding: 2rem 0;
+  }
+  .contain {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .benefit-header {
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+  }
+  .cover {
+    flex-direction: column;
+  }
+  .benefit-cover {
+    width: 95%;
+    margin: 0 auto;
+  }
+}

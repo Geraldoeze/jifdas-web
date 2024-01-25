@@ -1,0 +1,22 @@
+@import "../../../styles.css";
+.btn {
+ color: var(--secondary-color);
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-family: "Outfit";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  outline: none;
+  border: 0;
+  height: 50px;
+  min-width: 200px;
+  padding:  0  20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

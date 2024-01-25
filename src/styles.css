@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Import Google Font */
+
+
+/* Root styles */
+:root {
+  --primary-color: #fff;
+  --secondary-color: #345215;
+  --text-color: #18191f;
+}
+
+/* Global styles */
+body {
+  font-family: 'Outfit';
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  margin: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+}
+
+/* styles.css */
+
+/* Common styles for all device sizes */
+
+
+
+
+/* Large devices (lg) */
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 120px;
+  }
+}
+
+/* Medium devices (md) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+/* Small devices (sm) */
+@media (max-width: 767px) {
+  .container {
+    padding:0 10px;
+  }
+}
+
+/* For WebKit based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 3px; /* Adjust width as needed */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color); /* Thumb color */
+}
+
+/* For Firefox */
+/* Note: Custom styling of scrollbars is not supported in Firefox, 
+     but you can style the overlay scrollbars */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #fff var(--secondary-color);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

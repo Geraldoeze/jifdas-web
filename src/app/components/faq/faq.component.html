@@ -1,0 +1,40 @@
+<section id="faq" class="section-faq">
+  <div>
+    <h3 class="faq-text">
+      Frequently Asked <br />
+      <span style="color: #345215">Questions</span>
+    </h3>
+  </div>
+  <!-- faq.component.html -->
+  <div class="faq-container container">
+    <div
+      *ngFor="let item of faqItems; let i = index"
+      class="faq"
+      (click)="toggleContent(i)"
+    >
+      <div class="faq-cover">
+        <h4>{{ item.question }}</h4>
+        <img
+          *ngIf="i !== openItemId"
+          src="/assets/icons/down.svg"
+          width="20"
+          height="18"
+          alt="i"
+        />
+        <img
+          *ngIf="i === openItemId"
+          class="img-trans"
+          src="/assets/icons/down.svg"
+          width="20"
+          height="18"
+          alt="i"
+        />
+      </div>
+      <div class="faq-content-container">
+        <div *ngIf="i === openItemId" class="faq-content">
+          <p style="padding: 0 15px;">{{ item.answer }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

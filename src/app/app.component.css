@@ -1,0 +1,10 @@
+@import "../styles.css";
+
+.sectionOne {
+  background-color: var(--secondary-color);
+  min-height: 100vh;
+}
+
+.sectionTwo {
+  background-color: var(--secondary-color);
+}

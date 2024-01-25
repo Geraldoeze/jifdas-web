@@ -1,0 +1,86 @@
+@import "../../../styles.css";
+
+.section-home {
+  display: flex;
+  align-items: center;
+  height: 96vh;
+  padding-top: 5rem;
+}
+
+p {
+  color: white;
+}
+
+.cover {
+  display: flex;
+}
+.home-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main {
+  font-family: "Inter";
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+.text {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.btn-cover {
+  display: flex;
+  gap: 30px;
+}
+.home-img {
+  flex: 40%;
+}
+
+@media only screen and (max-width: 860px) {
+  .section-home {
+    min-height: 100vh;
+  }
+  .cover {
+    display: block;
+  }
+  .home-content {
+    width: 90%;
+  }
+  .main {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .text {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+  }
+  .home-img {
+    display: none;
+  }
+  .btn-cover {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+.main {
+  font-size: 35px;
+  line-height: 40px;
+}
+.text {
+  font-size: 18px;
+  line-height: 20px;
+}
+}

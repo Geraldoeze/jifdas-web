@@ -1,0 +1,66 @@
+<section>
+  <div class="scrollTestContainer">
+    <div #scrollContent  class="scrollContent container">
+      <div [@fadeIn] #contentOne class="module-main one">
+        <img
+          src="/assets/icons/headIcon.svg"
+          alt="i"
+          width="60px"
+          height="50px"
+        />
+        <h3>In-house Development</h3>
+        <p>
+          This interface has been specially designed for authorized and
+          authenticated users, including those from state cells, defense
+          missions, and DHQ-led operations for collaborative intelligence
+          sharing even among sister agencies.
+        </p>
+        <app-button
+          >Sign as Field Agent
+          <img src="/assets/login.svg" alt="gl" width="28px" height="25px"
+        /></app-button>
+      </div>
+      <div [@fadeIn] #contentTwo class="module-main two">
+        <img
+          src="/assets/icons/headIcon.svg"
+          alt="i"
+          width="60px"
+          height="50px"
+        />
+        <h3>Data Officers</h3>
+        <p>
+          Equipped with advanced data preprocessing and analysis features to
+          ensure information accuracy. The module also offers the ability to
+          perform custom quries for efficient information filtering
+        </p>
+        <app-button
+          >Sign as Data Officers
+          <img src="/assets/login.svg" alt="gl" width="28px" height="25px"
+        /></app-button>
+      </div>
+
+      <div [@fadeIn] #contentThree class="module-main three">
+        <img
+          src="/assets/icons/headIcon.svg"
+          alt="i"
+          width="60px"
+          height="50px"
+        />
+        <h3>In-house Development</h3>
+        <p>
+          This interface has been specially designed for authorized and
+          authenticated users, including those from state cells, defense
+          missions, and DHQ-led operations for collaborative intelligence
+          sharing even among sister agencies.
+        </p>
+        <app-button
+          >Sign as Field Agent
+          <img src="/assets/login.svg" alt="gl" width="28px" height="25px"
+        /></app-button>
+      </div>
+    </div>
+    <div class="stickyLeftChild">
+      <app-image-display [imageNumber]="imageNumber"></app-image-display>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+img {
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.hidden {
+  opacity: 0;
+}
+.fade-in-image {
+  animation: fadeIn 5s;
+}
+.fade-in-image img {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+  }
+  
+  .fade-in-image img:leave {
+    opacity: 0;
+  }
+  
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

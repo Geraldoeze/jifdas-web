@@ -1,0 +1,26 @@
+<!-- image-display.component.html -->
+<div *ngIf="number == 1" class="fade-in-image">
+  <img
+    src="/assets/demo.png"
+    width="100%"
+    height="100%"
+    [alt]="'Image ' + imageNumber"
+  />
+</div>
+
+<div *ngIf="number == 2" class="fade-in-image">
+  <img
+    src="/assets/home-img.png"
+    width="100%"
+    height="100%"
+    [alt]="'Image ' + imageNumber"
+  />
+</div>
+<div *ngIf="number == 3" class="fade-in-image">
+  <img
+    src="/assets/text.png"
+    width="100%"
+    height="100%"
+    [alt]="'Image ' + imageNumber"
+  />
+</div>

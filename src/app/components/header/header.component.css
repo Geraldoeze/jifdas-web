@@ -1,0 +1,154 @@
+@import "../../../styles.css";
+
+.section-head {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.head-nav {
+  height: 55px;
+  border-radius: 50px;
+  background-color: white;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+}
+.list {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.list li {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+  gap: 8px;
+}
+.btn-container {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.btn {
+  color: white;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  font-family: "Outfit";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  outline: none;
+  height: 50px;
+  min-width: 130px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* Side Bar Navigation */
+.sideNav-container {
+  right: 0;
+  position: fixed;
+  top: 5rem;
+  width: 100%;
+  z-index: 300;
+}
+
+/* Backdrop */
+.backdrop {
+  width: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the alpha value (0.5) to control the transparency */
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.sideNav-style {
+  width: 70%;
+  height: 100vh;
+  background: #ffffff;
+}
+.small-list {
+  list-style-type: none;
+  padding: 0;
+}
+.sideNav-style li {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Outfit", sans-serif;
+}
+.sideNav-style li:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+.sideNav-style a:hover {
+  color: white;
+}
+.nav-control {
+  display: none;
+}
+
+@media only screen and (max-width: 860px) {
+  .header-container {
+    padding: 10px 0;
+  }
+  .nav-control {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .head-nav {
+    display: none;
+  }
+  .btn-container {
+    display: none;
+  }
+}

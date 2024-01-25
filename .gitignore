@@ -23,6 +23,8 @@ lib-cov
 coverage
 *.lcov
 
+
+.angular
 # nyc test coverage
 .nyc_output
 
@@ -41,7 +43,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-
+angular/
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 

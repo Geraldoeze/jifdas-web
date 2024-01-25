@@ -1,0 +1,81 @@
+.scrollTestContainer {
+  display: flex;
+  min-height: 100vh;
+  margin-top: 50px;
+}
+
+.scrollContent {
+  flex: 1;
+  min-height: 1200px;
+  overflow-y: auto;
+}
+.stickyLeftChild {
+  position: sticky;
+  top: 0;
+  width: 45%;
+  padding: 20px 0;
+  margin-top: 1rem;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  height: 600px;
+}
+.module-main {
+  height: 600px;
+  margin-top: 100px;
+  font-family: "Inter";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.one {
+  animation: fadeIn 5s;
+}
+.two {
+  animation: fadeIn 5s;
+}
+.three {
+  animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.module-main h3 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.module-main p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+
+@media only screen and (max-width: 860px) {
+  .stickyLeftChild {
+    display: none;
+  }
+  .module-main {
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+  .module-main h3 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .module-main p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
